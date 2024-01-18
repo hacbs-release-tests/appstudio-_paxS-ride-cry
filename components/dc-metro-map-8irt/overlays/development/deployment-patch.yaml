@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-8irt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/hacbs-release-tests/happy-path-efhp-tenant/appstudio/dc-metro-map-8irt@sha256:40a712890a618a64b4d659e8ca25831a6b7063d69b0a96a5a928b83dcbcb6c5e
+        name: my-nodejs
+        resources: {}
+status: {}
